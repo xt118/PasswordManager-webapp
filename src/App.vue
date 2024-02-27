@@ -6,10 +6,10 @@
         <div id="title">Password Manager</div>
         <el-form :model="calculateionParameters" :rules="calculateionParameterRules" ref="calculateionParameters" label-width="120px">
           <el-form-item label="Domain" prop="domain">
-            <el-input v-model="calculateionParameters.domain"></el-input>
+            <el-input v-model="calculateionParameters.domain" spellcheck="false"></el-input>
           </el-form-item>
           <el-form-item label="AccountCode" prop="accountCode">
-            <el-input v-model="calculateionParameters.accountCode"></el-input>
+            <el-input v-model="calculateionParameters.accountCode" spellcheck="false"></el-input>
           </el-form-item>
           <div>
             <el-button type="primary" @click="onSubmit('calculateionParameters')">Calculate</el-button>
